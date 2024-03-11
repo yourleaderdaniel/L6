@@ -1,0 +1,22 @@
+﻿@model PizzaOrderingApp.Models.OrderViewModel
+
+<h2>Create Your Order</h2>
+
+<form asp-action="Create">
+    <div>
+        <label>Pepperoni Pizza</label>
+        <input type="checkbox" name="products" value="Pepperoni Pizza">
+        <input type="number" name="quantity" min="0" placeholder="Quantity">
+    </div>
+    <div>
+        <label>Margherita Pizza</label>
+        <input type="checkbox" name="products" value="Margherita Pizza">
+        <input type="number" name="quantity" min="0" placeholder="Quantity">
+    </div>
+    <div>
+        <label>Veggie Pizza</label>
+        <input type="checkbox" name="products" value="Veggie Pizza">
+        <input type="number" name="quantity" min="0" placeholder="Quantity">
+    </div>
+    <button type="submit">Proceed to Customize</button>
+</form>

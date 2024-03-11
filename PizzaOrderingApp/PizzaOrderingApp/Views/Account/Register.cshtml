@@ -1,0 +1,13 @@
+﻿@model PizzaOrderingApp.Models.User
+
+<form asp-action="Register" method="post">
+    <div>
+        <label>Name:</label>
+        <input asp-for="Name" />
+    </div>
+    <div>
+        <label>Age:</label>
+        <input asp-for="Age" type="number" />
+    </div>
+    <button type="submit">Register</button>
+</form>

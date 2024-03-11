@@ -1,0 +1,15 @@
+﻿@model PizzaOrderingApp.Models.OrderViewModel
+
+<h2>Customize Your Pizza</h2>
+
+
+<form asp-action="Customize">
+    <label>Choose toppings for Pepperoni Pizza:</label>
+    <div>
+        <input type="checkbox" name="topping" value="Extra Cheese"> Extra Cheese
+    </div>
+    <div>
+        <input type="checkbox" name="topping" value="Mushrooms"> Mushrooms
+    </div>
+    <button type="submit">Add to Order</button>
+</form>

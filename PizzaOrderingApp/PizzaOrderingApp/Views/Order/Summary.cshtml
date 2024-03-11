@@ -1,0 +1,19 @@
+﻿@model PizzaOrderingApp.Models.OrderViewModel
+
+<h2>Order Summary</h2>
+
+@if (Model.Products != null && Model.Products.Any())
+{
+    <ul>
+        @foreach (var product in Model.Products)
+        {
+            <li>@product.Name - Quantity: @product.Quantity</li>
+        }
+    </ul>
+}
+else
+{
+    <p>No products in your order.</p>
+}
+
+<p>Thank you, @Model.User.Name, for your order!</p>
